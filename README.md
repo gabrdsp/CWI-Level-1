@@ -35,7 +35,7 @@ O código desenvolvido apresenta uma página simples com elementos estruturados 
 
 Abaixo está a imagem da tela final do projeto, mostrando o resultado visual da aplicação:
 
-![Tela Final do Projeto YourName](https://imgur.com/a/n2fDVHO)
+![Tela Final do Projeto YourName](https://i.imgur.com/JORJ0CS.png)
 
 ---
 
