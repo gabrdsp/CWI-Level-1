@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body, html {
     height: 100%;
@@ -10,6 +5,8 @@ body, html {
     background: url('../imagens/Background.png') no-repeat center center/cover;
     color: #fff;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -33,14 +30,14 @@ body, html {
     align-items: center;
 }
 
-.back-button {
+.botao-voltar {
     background: none;
     border: none;
     margin-right: 15px;
     cursor: pointer;
 }
 
-.back-button img {
+.botao-voltar img {
     width: 25px;
 }
 
@@ -81,7 +78,7 @@ body, html {
     width: 100%;
 }
 
-.search img {
+.pesquisa img {
     width: 20px;
     margin-left: 20px;
     cursor: pointer;
@@ -99,12 +96,12 @@ body, html {
     margin-top: 60px;
 }
 
-.movie-logo {
+.logo-filme {
     width: 350px;
     margin-bottom: 1px;
 }
 
-.details {
+.detalhes {
     display: flex;
     align-items: center;
     font-size: 13px;
@@ -112,12 +109,12 @@ body, html {
     color: #e3f2ff;
 }
 
-.details .icon-star {
+.detalhes .avaliacao {
     width: 13px;
     margin-right: 5px;
 }
 
-.description {
+.descricao {
     font-size: 15px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -138,7 +135,7 @@ body, html {
     cursor: pointer;
 }
 
-.watch {
+.trailer {
     background-color: transparent;
     border: 1px solid #ffffff;
     color: #fff;
@@ -149,17 +146,17 @@ body, html {
     color: #56758E;
 }
 
-.watch:hover, .play:hover {
+.trailer:hover, .play:hover {
     opacity: 0.8;
 }
 
-.credits p {
+.creditos p {
     font-size: 13px;
     margin-bottom: 5px;
     color: #e3f2ff;
 }
 
-.separator {
+.separador {
     width: 440px;
     height: 3px;
     background-color: #ffffff94;
@@ -167,33 +164,33 @@ body, html {
     border-radius: 2px;
 }
 
-.suggestions-title {
+.titulo-sugestoes {
     font-size: 22px;
     font-weight: 100;
     margin-bottom: 5px;
 }
 
-.carousel {
+.carrossel {
     display: flex;
     align-items: center;
     margin-left: 30px;
 }
 
-.arrow {
+.seta {
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.arrow.left {
+.seta.esquerda {
     margin-right: 20px;
 }
 
-.arrow.right {
+.seta.direita {
     margin-left: 20px;
 }
 
-.arrow img {
+.seta img {
     width: 35px;
 }
 
