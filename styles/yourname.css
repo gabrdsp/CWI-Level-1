@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('../imagens/Background.png') no-repeat center center/cover;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.back-button img {
+    width: 25px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.search img {
+    width: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.info {
+    max-width: 600px;
+    margin-top: 60px;
+}
+
+.movie-logo {
+    width: 350px;
+    margin-bottom: 1px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #e3f2ff;
+}
+
+.details .icon-star {
+    width: 13px;
+    margin-right: 5px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.watch {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #fff;
+}
+
+.play {
+    background-color: #fff;
+    color: #56758E;
+}
+
+.watch:hover, .play:hover {
+    opacity: 0.8;
+}
+
+.credits p {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #e3f2ff;
+}
+
+.separator {
+    width: 440px;
+    height: 3px;
+    background-color: #ffffff94;
+    margin: 20px 0 10px 0;
+    border-radius: 2px;
+}
+
+.suggestions-title {
+    font-size: 22px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow.left {
+    margin-right: 20px;
+}
+
+.arrow.right {
+    margin-left: 20px;
+}
+
+.arrow img {
+    width: 35px;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 120px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
