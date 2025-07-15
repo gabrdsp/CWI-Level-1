@@ -19,37 +19,10 @@
 
 ---
 
-# Resposta: Projeto YourName — Exercício Filme
-
-Este projeto foi desenvolvido como resposta a um exercício do projeto Crescer 2025 da CWI, com o objetivo de aplicar conceitos básicos de HTML e CSS para criar uma página web funcional e visualmente organizada.
-
----
-
-## Descrição
-
-O código desenvolvido apresenta uma página simples com elementos estruturados semanticamente.
-
----
-
 ## Imagem da Tela Final
 
-Abaixo está a imagem da tela final do projeto, mostrando o resultado visual da aplicação:
+Abaixo está a imagem da nova tela final do projeto, mostrando o resultado visual da nova aplicação:
 
-![Tela Final do Projeto YourName](./filme/imagens/Tela_YourName.png)
+![Tela Final do Projeto YourName](https://i.imgur.com/JORJ0CS.png)
 
----
-
-## Estrutura do Projeto
-
-- **HTML:** Estrutura básica da página com tags semânticas.  
-- **CSS:** Estilização simples para layout limpo e funcional.  
-- **Imagens:** Arquivos de mídia usados para visualização.
-
----
-
-## Como Rodar o Projeto
-
-1. Clone ou baixe o repositório.  
-2. Abra o arquivo `.html` no seu navegador preferido.  
-3. Visualize a página conforme o layout apresentado na imagem acima.  
 
