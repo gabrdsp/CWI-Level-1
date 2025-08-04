@@ -1,0 +1,386 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  font-size: 18px;
+  padding-left: 20px;
+  width: 100%;
+  height: 629px;
+  background-image: url("/assets/img/home/banner-home-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*--Sobre nós--*/
+
+.sobre-nos {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imagem-sobre {
+  width: 100%;
+}
+
+.subtitulo-sobre {
+  color: #515070;
+  font-family: "Open Sans", sans-serif;
+}
+
+.texto-sobre {
+  color: #898989;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.itens-sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*--Sobre nós--*/
+
+/*--Serviços--*/
+
+.servicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  padding-left: 20px;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/img/home/banner-servicos-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.texto-servico {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/*--Serviços--*/
+
+/*--Depoimentos--*/
+
+.depoimentos {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(246, 246, 246, 1);
+}
+
+.container-depoimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteudo-depoimentos {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.texto-nome {
+  color: #515070;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.data {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #ff8e6e;
+}
+
+.texto-depoimento {
+  width: 95%;
+  color: #898989;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 29px;
+}
+
+/*--Depoimentos--*/
+
+/*--Funcionalidades--*/
+
+.funcionalidades {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgba(81, 80, 112, 1),
+    rgba(107, 105, 176, 1)
+  );
+  padding: 20px 20px 0 20px;
+}
+
+.container-funcionalidades {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.info-item {
+  text-align: left;
+}
+
+.titulo-info {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.texto-info {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff96;
+  font-size: 12px;
+  margin-top: 5px;
+  width: 75%;
+}
+
+.smartphone-mobile {
+  display: flex;
+  align-items: end;
+  & img {
+    width: 100%;
+  }
+}
+
+.smartphone-pc {
+  display: none;
+}
+
+/*--Funcionalidades--*/
+
+/*--Entre em contato--*/
+
+.contato {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(246, 246, 246, 1);
+}
+
+.itens-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imagem-contato {
+  width: 100%;
+}
+
+.subtitulo-contato {
+  color: #515070;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  top: 30px;
+}
+
+.texto-contato {
+  width: 80%;
+  color: #898989;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/*--Entre em contato--*/
+
+@media screen and (min-width: 768px) {
+  .sobre-nos,
+  .hero,
+  .servicos,
+  .contato,
+  .depoimentos {
+    padding: 40px;
+  }
+
+  .funcionalidades {
+    padding: 40px 40px 0 40px;
+  }
+
+  .container-imagem-sobre {
+    width: 60%;
+    align-self: center;
+  }
+
+  .imagem-contato {
+    width: 100%;
+  }
+
+  .container-imagem-contato {
+    width: 60%;
+    align-self: center;
+  }
+
+  .imagem-sobre {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .icone-menu {
+    display: none;
+  }
+  .logo-mobile {
+    display: none;
+  }
+
+  .hero {
+    padding-left: 60px;
+    background-image: url("/assets/img/home/banner-home.png");
+
+    & a {
+      background-color: #ff8e6e;
+    }
+  }
+
+  .titulo-principal {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+  }
+
+  .sobre-nos {
+    padding: 120px 60px;
+    flex-direction: row-reverse;
+  }
+
+  .container-imagem-sobre {
+    width: 30%;
+  }
+
+  .itens-sobre {
+    width: 70%;
+  }
+
+  .texto-sobre {
+    width: 493;
+    height: 134;
+    opacity: 1;
+
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+    letter-spacing: 0%;
+  }
+
+  .titulo-secundario {
+    font-size: 40px;
+  }
+
+  .servicos {
+    padding-left: 60px;
+    background-image: url("/assets/img/home/banner-servicos.jpg");
+  }
+
+  .texto-servico {
+    font-size: 14px;
+    width: 40%;
+  }
+
+  .depoimentos {
+    align-items: start;
+    padding: 120px 60px;
+  }
+
+  .texto-depoimento {
+    text-align: left;
+  }
+
+  .container-depoimentos {
+    flex-direction: row;
+  }
+
+  .conteudo-depoimentos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .item-depoimento {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .data,
+  .texto-depoimento {
+    text-align: left;
+  }
+
+  .funcionalidades {
+    flex-direction: column;
+  }
+
+  .conteudo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-funcionalidades {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .conteudo-func {
+    display: flex;
+  }
+
+  .smartphone-mobile {
+    display: none;
+    align-items: end;
+  }
+
+  .smartphone-pc {
+    display: flex;
+    align-items: end;
+    & img {
+      width: 100%;
+    }
+  }
+
+  .contato {
+    padding: 120px 60px;
+    flex-direction: row;
+    gap: 120px;
+  }
+
+  .itens-contato {
+    gap: 40px;
+  }
+
+  .container-imagem-contato {
+    width: 40%;
+  }
+  .itens-contato {
+    width: 60%;
+  }
+}

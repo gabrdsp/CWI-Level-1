@@ -1,0 +1,88 @@
+/* Estilização do menu */
+
+.menu {
+  position: relative;
+}
+
+.icone-menu {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.escolher {
+  width: 100%;
+}
+
+.links-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 5px 20px;
+  border-radius: 8px;
+}
+
+.links-menu.open {
+  display: flex;
+}
+
+.links-menu a {
+  text-decoration: none;
+  color: #4a4a4a;
+  padding: 8px 0;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.links-menu a:hover {
+  color: #515070;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 20px 60px;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .icone-menu {
+    display: none;
+  }
+
+  .links-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: static;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+  }
+}

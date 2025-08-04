@@ -1,0 +1,71 @@
+/* Parte de criação dos padrões dos elementos do projeto : estilos, fontes, cores e tamanhos */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.botao {
+  max-width: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #ededed;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.primeiro-botao {
+  background-color: rgba(81, 80, 112, 1);
+  width: 170px;
+}
+
+.segundo-botao {
+  background-color: rgba(255, 142, 110, 1);
+  width: 170px;
+}
+
+.terceiro-botao {
+  width: 175px;
+  background-color: rgba(81, 80, 112, 1);
+  font-weight: 700;
+  padding: 20px;
+}
+
+.quarto-botao {
+  width: 120px;
+  background-color: rgba(81, 80, 112, 1);
+  font-weight: 700;
+  padding: 20px;
+}
+
+.titulo-principal {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 48px;
+}
+
+.titulo-secundario {
+  color: #ff8e6e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+}
+
+.texto {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}

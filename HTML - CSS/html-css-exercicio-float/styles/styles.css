@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  position: relative;
+}
+
+#container img {
+  height: 600px;
+  display: block;
+}
+
+.legenda {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.legenda p {
+  text-align: justify;
+  font-size: 14px;
+  margin-bottom: 10px; 
+}

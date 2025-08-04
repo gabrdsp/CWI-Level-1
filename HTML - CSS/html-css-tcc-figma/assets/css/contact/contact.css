@@ -1,0 +1,206 @@
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  font-size: 18px;
+  padding-left: 20px;
+  max-width: 100%;
+  height: 456px;
+  background-image: url("/assets/img/contact/banner-contato-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*--Formulario--*/
+
+.container-itens-formulario {
+  padding: 20px;
+}
+
+.item-formulario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.titulo-formulario {
+  color: #ff8e6e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.formulario {
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+.item label {
+  color: #898989;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.entrada-primaria {
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+.entrada-primaria::placeholder {
+  color: #a9a9a9;
+}
+
+.container-radio {
+  display: flex;
+  gap: 20px;
+}
+
+.entrada-radio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #a9a9a9;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  accent-color: #515070;
+}
+
+select {
+  color: #898989;
+}
+
+.item-termos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-termos p {
+  color: #8989899a;
+}
+
+.botao-termos {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/*--Formulario--*/
+
+/*--Informacoes--*/
+
+.informacoes-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  text-align: left;
+  margin-top: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(81, 80, 112, 1),
+    rgba(107, 105, 176, 1)
+  );
+}
+
+.titulo-informacoes {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.item-informacao {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 30px;
+}
+
+.item-informacao p {
+  font-size: 14px;
+}
+
+.item-termos {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*--Informacoes--*/
+
+@media screen and (min-width: 1024px) {
+  .contato {
+    padding-left: 60px;
+    background-image: url("/assets/img/contact/banner-contato.png");
+  }
+
+  .formulario-contato {
+    display: flex;
+  }
+
+  .container-itens-formulario {
+    width: 60%;
+    padding: 30px 60px;
+  }
+
+  .informacoes-contato {
+    width: 34%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .formulario {
+    display: grid;
+    grid-template-areas:
+      "entrada-nome entrada-nome entrada-email entrada-email"
+      "selecao selecao radio radio"
+      "mensagem mensagem mensagem mensagem"
+      "termos termos termos termos";
+  }
+
+  .item:last-child {
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: termos;
+  }
+
+  .botao-termos {
+    margin: 0;
+  }
+
+  .entrada-nome {
+    grid-area: entrada-nome;
+  }
+
+  .entrada-email {
+    grid-area: entrada-email;
+  }
+
+  .radio {
+    grid-area: radio;
+  }
+
+  .selecao {
+    grid-area: selecao;
+  }
+
+  .mensagem {
+    grid-area: mensagem;
+  }
+}
