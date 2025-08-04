@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Atividade</title>
+    <link rel="stylesheet" href="styles/yourname.css" />
+</head>
+
+<body>
+    <video id="video-bg" autoplay muted>
+        <source src="videos/yourname_video.webm" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <header class="cabecalho clearfix">
+            <div class="cabecalho-esquerdo">
+                <button class="botao-voltar">
+                    <img src="imagens/icones/setaesquerda.png" alt="Voltar">
+                </button>
+                <img src="imagens/icones/logoempresa.png" alt="CWI Plus" class="logo">
+            </div>
+            <div class="cabecalho-direito">
+                <nav class="menu-navegacao">
+                    <a href="#">Filmes</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Categorias</a>
+                    <a href="#">Minha lista</a>
+                    <a href="#">Meu Perfil</a>
+                </nav>
+                <div class="icone-pesquisa">
+                    <img src="imagens/svg/lupa.svg" alt="Pesquisar">
+                </div>
+            </div>
+        </header>
+
+        <main class="conteudo">
+            <div class="info-filme">
+                <img src="imagens/icones/logo.png" alt="Your Name Logo" class="logo-filme">
+                <p class="detalhes">
+                    <img src="imagens/svg/estrela.svg" alt="Estrela" class="icone-estrela">
+                    9.5 | 2016 | 1h 47min | Romance, Fantasia
+                </p>
+                <p class="descricao">
+                    Mitsuha é a filha do prefeito de uma pequena cidade, <br>mas sonha em tentar a sorte em Tóquio.
+                    Taki trabalha <br>em um restaurante na cidade e deseja largar o seu <br>emprego. Eles não se
+                    conhecem, mas agora estão <br>conectados pelos seus sonhos.
+                </p>
+                <div class="botoes-acao clearfix">
+                    <button class="btn btn-trailer"
+                        onclick="window.open('https://www.youtube.com/watch?v=soQXM3XVvIU', '_blank')">
+                        Assista ao trailer
+                    </button>
+                    <button class="btn btn-play">▶ Assista agora</button>
+                </div>
+                <div class="creditos">
+                    <p><strong>Diretor:</strong> Makoto Shinkai</p>
+                    <p><strong>Produtores:</strong> Yoshihiro Furusawa, Minami Ichikawa, <br>Kenji Ohta, Kōichirō Itō, Genki
+                        Kawamura</p>
+                    <p><strong>Elenco:</strong> Ryunosuke Kamiki, Mone Kamishiraishi, Ryo Narita</p>
+                    <p><strong>Estúdio:</strong> CoMix Wave Films</p>
+                </div>
+            </div>
+
+            <div class="separador"></div>
+
+            <h2 class="titulo-sugestoes">Sugestões:</h2>
+            <div class="carrossel clearfix">
+                <button class="seta seta-esquerda">
+                    <img src="imagens/icones/setaesquerda.png" alt="Anterior">
+                </button>
+                <div class="lista-cards clearfix">
+                    <div class="card">
+                        <img src="imagens/osabordajuventude.png" alt="Os Sabores da Juventude">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/luzesnoceu.png" alt="Firework: Luzes no Céu">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/otempocomvoce.png" alt="O Tempo com Você">
+                    </div>
+                    <div class="card principal">
+                        <img src="imagens/yourname.jpg" alt="Your Name">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/omeninoeagarca.png" alt="O Menino e a Garça">
+                    </div>
+
+                    <div class="card">
+                        <img src="imagens/suzume.png" alt="Suzume">
+                    </div>
+                    <div class="card">
+                        <img src="imagens/oestranhonapraia.png" alt="O Estranho na Praia">
+                    </div>
+                </div>
+                <button class="seta seta-direita">
+                    <img src="imagens/icones/setadireita.png" alt="Próximo">
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

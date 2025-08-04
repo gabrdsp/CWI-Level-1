@@ -1,0 +1,245 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Background com imagem */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../imagens/Background2.png') no-repeat center center/cover;
+    z-index: 0;
+}
+
+/* Background com vídeo temporário */
+#video-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0;
+    animation: fadeVideo 6.5s forwards;
+    animation-delay: 2s;
+    pointer-events: none;
+}
+
+@keyframes fadeVideo {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Container principal */
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.cabecalho-esquerdo {
+    float: left;
+    display: block;
+}
+
+.cabecalho-direito {
+    display: flex;
+    align-items: center;
+}
+
+.botao-voltar {
+    background: none;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.botao-voltar img {
+    width: 25px;
+    height: auto;
+}
+
+.logo {
+    height: 30px;
+}
+
+.menu-navegacao {
+    display: flex;
+    gap: 40px;
+    margin-right: 20px;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 0;
+    position: relative;
+}
+
+.menu-navegacao a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+.menu-navegacao a:hover::after {
+    width: 100%;
+}
+
+.icone-pesquisa img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.conteudo {
+    flex: 1;
+    padding-top: 20px;
+    clear: both;
+}
+
+.info-filme {
+    max-width: 600px;
+    margin-top: 3px;
+    color: #e3f2ff;
+}
+
+.logo-filme {
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+.detalhes {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.icone-estrela {
+    width: 13px;
+    margin-right: 5px;
+}
+
+.descricao {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: white;
+}
+
+.botoes-acao {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-trailer {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-play {
+    background: white;
+    color: #56758E;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.creditos p {
+    font-size: 13px;
+    margin: 5px 0;
+    color: #e3f2ff;
+}
+
+.separador {
+    width: 440px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.521);
+    margin: 20px 0 10px 0;
+}
+
+/* Carrossel */
+.titulo-sugestoes {
+    font-size: 22px;
+    margin: 20px 0 10px;
+}
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.seta {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.seta img {
+    width: 25px;
+}
+
+.lista-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    width: calc(100% - 120px);
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 160px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
